@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "DALL·E 2025-01-13 17.25.02 - A minimalist logo featuring a sleek, modern microphone in the centre. The microphone is designed with clean lines and a professional look, set against.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -12,6 +13,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "DALL·E 2025-01-13 17.25.02 - A minimalist logo featuring a sleek, modern microphone in the centre. The microphone is designed with clean lines and a professional look, set against 1.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -23,6 +25,7 @@
           "value" : "tinted"
         }
       ],
+      "filename" : "DALL·E 2025-01-13 17.25.02 - A minimalist logo featuring a sleek, modern microphone in the centre. The microphone is designed with clean lines and a professional look, set against 2.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
