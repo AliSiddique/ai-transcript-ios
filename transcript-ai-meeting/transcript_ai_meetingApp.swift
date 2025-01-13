@@ -7,7 +7,7 @@
 
 import SwiftUI
 import SwiftData
-
+import SuperwallKit
 @main
 struct transcript_ai_meetingApp: App {
     var sharedModelContainer: ModelContainer = {
@@ -22,10 +22,15 @@ struct transcript_ai_meetingApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
+    init(){
+        Superwall.configure(apiKey: "pk_1c37b7aa60daf40394803b68e48e5c82d491f18246140c8c")
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    Superwall.shared.register(event: "campaign_trigger")
+                }
         }
         .modelContainer(sharedModelContainer)
     }

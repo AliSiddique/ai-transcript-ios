@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CC030A9A2D35842300586E0B /* SuperwallKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC030A992D35842300586E0B /* SuperwallKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CC030A852D35834E00586E0B /* transcript-ai-meeting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transcript-ai-meeting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC030A9A2D35842300586E0B /* SuperwallKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "transcript-ai-meeting";
 			packageProductDependencies = (
+				CC030A992D35842300586E0B /* SuperwallKit */,
 			);
 			productName = "transcript-ai-meeting";
 			productReference = CC030A852D35834E00586E0B /* transcript-ai-meeting.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = CC030A7C2D35834E00586E0B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CC030A982D35842300586E0B /* XCRemoteSwiftPackageReference "Superwall-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CC030A862D35834E00586E0B /* Products */;
 			projectDirPath = "";
@@ -260,6 +269,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +335,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC030A982D35842300586E0B /* XCRemoteSwiftPackageReference "Superwall-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/superwall/Superwall-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC030A992D35842300586E0B /* SuperwallKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC030A982D35842300586E0B /* XCRemoteSwiftPackageReference "Superwall-iOS" */;
+			productName = SuperwallKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC030A7D2D35834E00586E0B /* Project object */;
 }
